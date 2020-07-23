@@ -1,0 +1,17 @@
+<%= form_with(model: @article.comments.new, url: article_comments_path(@article)) do |form| %>
+  <div class="field">
+    <%= form.label :name %><br />
+    <%= form.text_field :name %>
+  </div>
+  <div class="field">
+    <%= form.label :email %><br />
+    <%= form.text_field :email %>
+  </div>
+  <div class="field">
+    <%= form.label :body %><br />
+    <%= form.text_area :body %>
+  </div>
+  <div class="actions">
+    <%= form.submit 'Add' %>
+  </div>
+<% end %>

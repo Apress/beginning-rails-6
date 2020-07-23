@@ -1,0 +1,15 @@
+<h1><%= t("sessions.login") %></h1>
+
+<%= form_with(url: session_path, local: true) do |form| %>
+  <div class="field">
+    <%= form.label :email, t("sessions.email") %>
+    <%= form.text_field :email %>
+  </div>
+  <div class="field">
+    <%= form.label :password, t("sessions.password") %>
+    <%= form.password_field :password %>
+  </div>
+  <div class="actions">
+    <%= form.submit t("sessions.login") %>
+  </div>
+<% end %>

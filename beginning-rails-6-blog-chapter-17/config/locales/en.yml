@@ -1,0 +1,67 @@
+en:
+  general:
+    are_you_sure: Are you sure?
+    back: Back
+    cancel: Cancel
+    create: Create
+    delete: Delete
+    edit: Edit
+    editing: Editing
+    footer: A simple blog built for the book Beginning Rails 6
+    email_a_friend: Email a friend
+    search: Search
+    send_email: Send email
+    show: Show
+    title: Blog
+    update: Update
+    your_name: Your name
+    your_friend_email: Your friend's email
+    or: or
+  application:
+    access_denied: Please log in to continue
+  articles:
+    editing_article: Editing Article
+    listing_articles: Listing Articles
+    new_article: New Article
+    article: article
+    create_success: Article was successfully created.
+    update_success: Article was successfully updated.
+    destroy_success: Article was successfully destroyed.
+    articles: Articles
+    notify_friend_success: Successfully sent a message to your friend
+    remove_this_image: Remove this image
+    new_article_published: New Article Published!
+    draft_via_email_notice_html: |
+      <em>Did you know that you can submit draft articles via email?</em>
+      Send an email to %{mailto_link} with the title in your subject, and your draft content in the body.
+
+  errors:
+    header:
+      one: "1 error prohibited this form from being submitted"
+      other: "%{count} errors prohibited this form from being submitted"
+  users:
+    new_user: New user
+    edit_password: Edit Password
+    editing_user: Editing user
+    create_success: User successfully added.
+    update_success: Updated user information successfully.
+  sessions:
+    email: Email
+    password: Password
+    login: Login
+    logout: Logout
+    successful_login: Logged in successfully
+    invalid_login: Invalid login/password combination
+    logout_success: You successfully logged out
+  comments:
+    name: Name
+    email: Email
+    body: Body
+    comments: Comments
+    new_comment: New comment
+    create_success: Thanks for your comment
+    create_failure: Unable to add comment
+    destroy_success: Comment deleted
+    add: Add
+    errors:
+      not_published_yet: is not published yet

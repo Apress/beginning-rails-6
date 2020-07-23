@@ -1,0 +1,24 @@
+<%= form_with(model: @email_a_friend, url: notify_friend_article_path(article), id: 'email_a_friend') do |form| %>
+  <% if @email_a_friend.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= t("errors.header", count: @email_a_friend.errors.count) %></h2>
+      <ul>
+        <% @email_a_friend.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= form.label :name, t('general.your_name') %>
+    <%= form.text_field :name %>
+  </div>
+  <div class="field">
+    <%= form.label :email, t("general.your_friend_email") %>
+    <%= form.text_field :email %>
+  </div>
+  <div class="actions">
+    <%= form.submit t("general.send_email") %> <%= t("general.or") %>
+    <%= link_to t("general.cancel"), '#', onclick: "document.querySelector('#notify_friend').style.display='none';return false;" %>
+  </div>
+<% end %>

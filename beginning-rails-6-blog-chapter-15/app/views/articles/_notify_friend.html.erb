@@ -1,0 +1,25 @@
+<%= form_with(model: @email_a_friend, url: notify_friend_article_path(article), id: 'email_a_friend') do |form| %>
+  <% if @email_a_friend.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@email_a_friend.errors.count, "error") %> prohibited this from being submitted:</h2>
+
+      <ul>
+        <% @email_a_friend.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= form.label :name, 'Your name' %>
+    <%= form.text_field :name %>
+  </div>
+  <div class="field">
+    <%= form.label :email, "Your friend's email" %>
+    <%= form.text_field :email %>
+  </div>
+  <div class="actions">
+    <%= form.submit 'Send' %> or
+    <%= link_to 'Cancel', '#', onclick: "document.querySelector('#notify_friend').style.display='none';return false;" %>
+  </div>
+<% end %>

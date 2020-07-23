@@ -1,0 +1,10 @@
+<h1>New Article</h1>
+
+<p>
+  <em>Did you know that you can submit draft articles via email?</em>
+  Send an email to <%= mail_to current_user.draft_article_email %> with the title in your subject, and your draft content in the body.
+</p>
+
+<%= render 'form', article: @article %>
+
+<%= link_to 'Back', articles_path %>

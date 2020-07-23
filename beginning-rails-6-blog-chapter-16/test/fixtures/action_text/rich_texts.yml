@@ -1,0 +1,4 @@
+welcome_to_rails_body:
+  record: welcome_to_rails (Article)
+  name: body
+  body: <p>Rails is such a nice web framework written in ruby</p>

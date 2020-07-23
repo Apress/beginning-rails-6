@@ -1,0 +1,10 @@
+document.querySelector("#comments").insertAdjacentHTML("afterend", "<%= escape_javascript render partial: 'new' %>");
+
+var comment_form = document.querySelector("#main form");
+comment_form.style.opacity = 0;
+setTimeout(function() {
+  comment_form.style.transition = 'opacity 1s';
+  comment_form.style.opacity = 1;
+}, 10);
+
+document.querySelector("#new_comment_link").style.display = 'none';

@@ -1,0 +1,8 @@
+<p>
+  Someone added a comment to one of your articles <i><%= @article.title %></i>.
+</p>
+<p>
+  Go read the comment:
+  <%= link_to @article.title, article_url(@article) %>
+</p>
+

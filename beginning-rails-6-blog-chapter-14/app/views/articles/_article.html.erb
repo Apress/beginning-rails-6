@@ -1,0 +1,17 @@
+<div class="article">
+  <h3>
+    <%= link_to article.title, article %>
+    <% if article.owned_by? current_user %>
+      <span class="actions">
+        <%= link_to 'Edit', edit_article_path(article) %>
+        <%= link_to 'Delete', article, confirm: 'Are you sure?', method: :delete %>
+      </span>
+    <% end %>
+  </h3>
+  <hr>
+  <% if article.cover_image.attached? %>
+    <%= image_tag article.cover_image.variant(resize_to_limit: local_assigns.fetch(:cover_image_options, [200, 200])) %>
+    <hr>
+  <% end %>
+  <%= article.body %>
+</div>

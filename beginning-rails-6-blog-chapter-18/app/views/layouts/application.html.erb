@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= t("general.title") %></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div id="header">
+      <h1><%= link_to t("general.title"), root_path %></h1>
+      <%= language_selector %>
+
+      <div id="user_bar">
+        <% if logged_in? %>
+          <%= link_to t("articles.new_article"), new_article_path %> |
+          <%= link_to t("users.edit_password"), edit_user_path(current_user) %> |
+          <%= link_to t("sessions.logout"), logout_path %>
+        <% else %>
+          <%= link_to t("sessions.login"), login_path %>
+        <% end %>
+      </div>
+    </div>
+    <div id="main">
+      <%= content_tag :p, notice, class: 'notice' if notice.present? %>
+      <%= content_tag :p, alert, class: 'alert' if alert.present? %>
+      <%= yield %>
+    </div>
+    <div id="footer">
+      <%= t("general.footer") %>
+    </div>
+  </body>
+</html>

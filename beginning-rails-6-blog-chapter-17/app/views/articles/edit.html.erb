@@ -1,0 +1,6 @@
+<h1><%= t("articles.editing_article") %></h1>
+
+<%= render 'form', article: @article %>
+
+<%= link_to t("general.show"), @article %> |
+<%= link_to t("general.back"), articles_path %>

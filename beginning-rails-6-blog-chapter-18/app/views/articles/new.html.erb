@@ -1,0 +1,9 @@
+<h1><%= t("articles.new_article") %></h1>
+
+<p>
+  <%= t("articles.draft_via_email_notice_html", mailto_link: mail_to(current_user.draft_article_email)) %>
+</p>
+
+<%= render 'form', article: @article %>
+
+<%= link_to t("general.back"), articles_path %>

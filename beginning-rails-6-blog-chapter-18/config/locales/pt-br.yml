@@ -1,0 +1,187 @@
+pt-br:
+  general:
+    are_you_sure: Tem certeza?
+    back: Volta
+    cancel: Cancelar
+    create: Criar
+    delete: Apagar
+    edit: Editar
+    editing: Editando
+    footer: Um blog simples desenvolvido para o livro Beginning Rails 6
+    email_a_friend: Avisar um amigo
+    search: Pesquisar
+    send_email: Mandar email
+    show: Mostrar
+    title: Blog
+    update: Atualizar
+    your_name: Seu nome
+    your_friend_email: O email do seu amigo
+    or: ou
+  application:
+    access_denied: "Por favor, efetue o login para continuar"
+  helpers:
+    submit:
+      create: 'Crio %{model}'
+      update: 'Atualizar %{model}'
+      submit: 'Salve %{model}'
+  articles:
+    editing_article: Editando Artigo
+    listing_articles: Listando Artigos
+    new_article: Novo Artigo
+    article: Artigo
+    create_success: Artigo foi criado com sucesso.
+    update_success: Artigo foi atualizado com sucesso.
+    destroy_success: Artigo foi deletado com sucesso.
+    articles: Artigos
+    notify_friend_success: Seu amigo foi avisado a respeito desse artigo
+    remove_this_image: Remova esta imagem
+    draft_via_email_notice_html: |
+      <em>Você sabia que pode enviar artigos de rascunho por email?</em>
+      Envie um email para %{mailto_link} com o título no seu assunto e o conteúdo do seu rascunho no corpo.
+  errors:
+    header:
+      one: "1 erro proibiu o envio deste formulário"
+      other: "%{count} erros proibiram o envio deste formulário"
+  users:
+    new_user: Novo Usuario
+    edit_password: Editar senha
+    editing_user: Editando usuario
+    create_success: Usuario editado com sucesso.
+    update_success: Usuario atualizado com sucesso.
+  sessions:
+    email: Email
+    password: Senha
+    login: Logar
+    logout: Desconectar
+    successful_login: Logado com sucesso
+    invalid_login: Senha ou Email invalidos
+    logout_success: Voce desconectou do sistem com sucesso
+  comments:
+    comments: Comentarios
+    new_comment: Novo Comentario
+    create_success: Obrigado pelo comentario
+    create_failure: Nao foi possivel adicionar o comentario
+    destroy_success: Comentario deletado
+    add: Adicionar
+    said: disse
+    errors:
+      not_published_yet: ainda nao foi publicado
+
+  activerecord:
+    models:
+      article: Artigo
+      user: Usuario
+    attributes:
+      article:
+        title: Título
+        cover_image: Imagem de capa
+        location: Localização
+        excerpt: Excerto
+        body: Corpo
+        published_at: Publicado em
+      comment:
+        name: Nome
+        email: Email
+        body: Conteudo
+      user:
+        email: Email
+        password: Senha
+        password_confirmation: ConfirmaÇão Da Senha
+
+
+    errors:
+      models:
+        article:
+          attributes:
+            title:
+              blank: "não pode ficar em branco"
+            body:
+              blank: "não pode ficar em branco"
+            user:
+              required: deve existir
+        comment:
+          attributes:
+            name:
+              blank: "não pode ficar em branco"
+            email:
+              blank: "não pode ficar em branco"
+            body:
+              blank: "não pode ficar em branco"
+        user:
+          attributes:
+            email:
+              too_short: "é muito curto (mínimo de %{count} caracteres)"
+              invalid: "é inválido"
+            password:
+              too_short: "é muito curto (mínimo de %{count} caracteres)"
+            password_confirmation:
+              confirmation: "não corresponde à %{attribute}"
+
+  activemodel:
+    errors:
+      models:
+        email_a_friend:
+          attributes:
+            name:
+              blank: "não pode ficar em branco"
+            email:
+              blank: "não pode ficar em branco"
+              invalid: "é inválido"
+      template:
+        header:
+          one: "1 erro proibiu que este %{model} fosse salvo"
+          other: "%{count} erro proibiu que este %{model} fosse salvo"
+
+  date:
+    formats:
+      default: "%d/%m/%Y"
+      short: "%d de %B"
+      long: "%d de %B de %Y"
+
+    day_names:
+      - Domingo
+      - Segunda
+      - Terça
+      - Quarta
+      - Quinta
+      - Sexta
+      - Sábado
+    abbr_day_names:
+      - Dom
+      - Seg
+      - Ter
+      - Qua
+      - Qui
+      - Sex
+      - Sáb
+    month_names:
+      - Janeiro
+      - Fevereiro
+      - Março
+      - Abril
+      - Maio
+      - Junho
+      - Julho
+      - Agosto
+      - Setembro
+      - Outubro
+      - Novembro
+      - Dezembro
+    abbr_month_names:
+      - Jan
+      - Fev
+      - Mar
+      - Abr
+      - Mai
+      - Jun
+      - Jul
+      - Ago
+      - Set
+      - Out
+      - Nov
+      - Dez
+    order:
+      - :day
+      - :month
+      - :year
+

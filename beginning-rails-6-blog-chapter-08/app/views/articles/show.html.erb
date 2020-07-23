@@ -1,0 +1,9 @@
+<%= render @article %>
+
+<h3>Comments</h3>
+
+<div id="comments">
+  <%= render @article.comments %>
+</div>
+
+<%= render 'comments/new' %>
