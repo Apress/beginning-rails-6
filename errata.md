@@ -1,5 +1,10 @@
 # Errata for *Beginning Rails 6*
 
+On **page 25** [technical accuracy]:
+ 
+instead of -system it must be --system 
+
+***
 
 On **page 27** [technical accuracy]:
  
